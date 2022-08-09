@@ -1,0 +1,220 @@
+
+h1, h3  {
+    font-family: Helvetica, sans-serif;
+}
+h2 {
+    font-family: Helvetica, sans-serif;
+    text-decoration: underline;
+}
+a {
+    font-family: Helvetica, sans-serif;
+}
+p {
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    font-family: Arial;
+}
+body {
+    position: relative;
+    background: rgb(218,213,191);
+    background: linear-gradient(135deg, rgba(218,213,191,1) 17%, rgba(242,242,242,1) 83%);
+}
+header {
+    background: linear-gradient(90deg, rgba(242,242,242,1) 0%, rgba(197,218,191,1) 17%);
+    height: 50px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+.main-content {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: auto;
+    position:relative;
+    padding-top: 50px;
+}
+
+.main-content-about {
+    width: auto;
+    position:relative;
+    padding-top: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#navbar {
+    float: right;
+    height: 25px;
+    margin-right: 25px;
+    margin-top: 14px;
+}
+
+#navbar, a {
+    color: black;
+}
+
+#home-p {
+    font-size: 16px;
+    border-style: solid;
+    border-color: black;
+    padding: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: block;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#languages {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+#intro-section {
+    text-align: center;
+}
+#title-pic {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #9E768F;
+}
+.site-title {
+    position: relative;
+    float: left;
+    height: 25px;
+    margin-top: 7px;
+    margin-left: 25px;
+}
+#intro-p {
+    margin-left: 0%;
+    margin-right: 10%;
+    text-align: left;
+
+}
+
+#fav-things {
+    height: auto;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 10%;
+    text-align: center;
+    margin-bottom: 75px;
+    position: static;
+    padding: 10px;
+    border-color:  rgba(0, 0, 0, .5);
+    border-style: solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#fav-things, span {
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#handstands, #hiking, #music {
+    height: 200px;
+    width: 350px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#github-div {
+    position: static;
+    margin-top: 10px;
+}
+#hobbies-div {
+    position: static;
+ 
+ }
+ #games-div {
+    position: static;
+    text-align: center;
+    display: block;
+ }
+
+ #games-table {
+    margin-bottom: 50px;
+ }
+
+ #gametitle {
+    text-align: center;
+ }
+
+ form {
+    padding: 15px;
+    background-color: white;
+    font-style: italic;
+    border-style: solid;
+    font-weight: 900px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: static;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 100px;
+ }
+ #form-title {
+    font-style: normal;
+ }
+#youtube-video {
+    text-align: center;
+}
+
+ input[type=button] {
+    color: black;
+    background-color: rgb(225, 225, 225);
+    padding: 5px;
+    margin-top: 10px;
+ }
+
+ input[type=button]:hover {
+    color: black;
+    background-color: cadetblue;
+    padding: 5px;
+    cursor: pointer;
+    background: #e6e6e6
+ }
+#submit-button {
+    outline: none;
+    margin-top: 10px;
+    background: linear-gradient(#eee, #c0c0c09e);
+    border-radius: 15%;
+    border-style: solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+ input[type=text]:focus {
+    color: black;
+    background-color: lightblue;
+    transition: 2s;
+ }
+ table, tr, th, td {
+    position: static;
+    width: "50%";
+    border: solid;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ td img {
+    width: 100px;
+    height: 100px;
+ }
+
+ .game-art {
+    width: 175px;
+    height: 260px;
+
+ }
+
+ table {
+    margin: auto;
+ }
