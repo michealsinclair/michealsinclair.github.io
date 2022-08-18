@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+}
+
+
+.container {
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+.sections {
+    margin-right: -4px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serifs;
+}
+
+
+.first-row {
+    display: block;
+    background-color: maroon;
+    height: 50%;
+    width: 100%;
+    
+}
+
+.first {
+    display: inline-block;
+    width: 33.3%;
+    height: 100%;
+    background-color: hwb(44 13% 9%);
+    padding-top: 15px;
+    text-align: center;
+}
+
+.first:hover {
+    background:rgba(29, 27, 27, 0.5);
+    transition: 0.17s;
+} 
+
+.second {
+    display: inline-block;
+    width: 33.3%;
+    height: 100%;
+    background-color: orange;
+    padding-top: 15px;
+    text-align: center;
+}
+.second:hover {
+    background:rgba(29, 27, 27, 0.5);
+    transition: 0.17s;
+} 
+.third {
+    display: inline-block;
+    width: 33.3%;
+    height: 100%;
+    background-color: red;
+    padding-top: 15px;
+    text-align: center;
+}
+.third:hover {
+    background:rgba(29, 27, 27, 0.5);
+    transition: 0.17s;
+} 
+.second-row {
+    display: block;
+    background-color: green;
+    height: 50%;
+    width: 100%;
+}
+.fourth {
+    display: inline-block;
+    width: 33.3%;
+    height: 100%;
+    background-color: green;
+    padding-top: 15px;
+    text-align: center;
+}
+.fourth:hover {
+    background:rgba(29, 27, 27, 0.5);
+    transition: 0.17s;
+} 
+.fifth {
+    display: inline-block;
+    width: 33.3%;
+    height: 100%;
+    background-color: blue;
+    padding-top: 15px;
+    text-align: center;
+}
+.fifth:hover {
+    background:rgba(29, 27, 27, 0.5);
+    transition: 0.17s;
+} 
+.sixth {
+    display: inline-block;
+    width: 33.3%;
+    height: 100%;
+    background-color: purple;
+    padding-top: 15px;
+    text-align: center;
+}
+.sixth:hover {
+    background:rgba(29, 27, 27, 0.5);
+    transition: 0.17s;
+} 
+.box-text {
+    padding: 15px;
+    font-size: 22px;
+}
+.small-box-text {
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.divider {
+    padding-left: 15px;
+}
+.icon {
+    width: 100px;
+    height: 100px;
+
+}
