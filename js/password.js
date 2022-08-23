@@ -1,5 +1,5 @@
 // Initialising the canvas
-var canvas = document.querySelector("canvas"),
+let canvas = document.querySelector("canvas"),
     ctx = canvas.getContext("2d");
 
 // Setting the width and height of the canvas
@@ -7,17 +7,17 @@ canvas.width = window.innerWidth;
 canvas.height = window.outerHeight;
 
 // Setting up the letters
-var letters =
+let letters =
     "ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ!#$%&*+0123456789";
 letters = letters.split("");
 
 // Setting up the columns
-var fontSize = 10,
+let fontSize = 10,
     columns = canvas.width / fontSize;
 
 // Setting up the drops
-var drops = [];
-for (var i = 0; i < columns; i++) {
+let drops = [];
+for (let i = 0; i < columns; i++) {
     drops[i] = 1;
 }
 
@@ -25,9 +25,9 @@ for (var i = 0; i < columns; i++) {
 function draw() {
     ctx.fillStyle = "rgba(0, 0, 0, .1)";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    for (var i = 0; i < drops.length; i++) {
-        var text = letters[Math.floor(Math.random() * letters.length)];
-        var colors = ["#E0B0FF", "#64d86b", "#AA336A"];
+    for (let i = 0; i < drops.length; i++) {
+        let text = letters[Math.floor(Math.random() * letters.length)];
+        let colors = ["#E0B0FF", "#64d86b", "#AA336A"];
         ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
         ctx.fillText(text, i * fontSize, drops[i] * fontSize);
         drops[i]++;
@@ -40,7 +40,7 @@ function draw() {
 // Loop the animation
 setInterval(draw, 33);
 
-var pwLetters = [
+let pwLetters = [
     "a",
     "b",
     "c",
@@ -94,27 +94,27 @@ var pwLetters = [
     "Y",
     "Z"
 ];
-var pwNumbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-var pwSymbols = ["!", "#", "$", "%", "&", "(", ")", "*", "+"];
+let pwNumbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+let pwSymbols = ["!", "#", "$", "%", "&", "(", ")", "*", "+"];
 
 function generatePassword() {
-    var letterGroup = "";
-    for (var i = 0; i < 4; i++) {
-        var randLetter = pwLetters[Math.floor(Math.random() * pwLetters.length)];
+    let letterGroup = "";
+    for (let i = 0; i < 4; i++) {
+        let randLetter = pwLetters[Math.floor(Math.random() * pwLetters.length)];
         letterGroup += randLetter;
     }
-    var numberGroup = "";
-    for (var n = 0; n < 4; n++) {
-        var randNumber = pwNumbers[Math.floor(Math.random() * pwNumbers.length)];
+    let numberGroup = "";
+    for (let n = 0; n < 4; n++) {
+        let randNumber = pwNumbers[Math.floor(Math.random() * pwNumbers.length)];
         numberGroup += randNumber;
     }
-    var symbolGroup = "";
-    for (var s = 0; s < 4; s++) {
-        var randSymbol = pwSymbols[Math.floor(Math.random() * pwSymbols.length)];
+    let symbolGroup = "";
+    for (let s = 0; s < 4; s++) {
+        let randSymbol = pwSymbols[Math.floor(Math.random() * pwSymbols.length)];
         symbolGroup += randSymbol;
     }
-    var completePassword = symbolGroup + numberGroup + letterGroup;
-    var hardPassword = completePassword
+    let completePassword = symbolGroup + numberGroup + letterGroup;
+    let hardPassword = completePassword
         .split("")
         .sort(function () {
             return 0.5 - Math.random();
